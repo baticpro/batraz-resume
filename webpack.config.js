@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require("webpack");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 const htmlPlugin = new HtmlWebPackPlugin({
@@ -10,7 +11,8 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.join(__dirname, 'public/dist'),
-    filename: "bundle.js"
+    filename: "bundle.js",
+    publicPath: "/"
   },
   module: {
     rules: [
@@ -24,6 +26,7 @@ module.exports = {
     ]
   },
   plugins: [
-    htmlPlugin
+    htmlPlugin,
+    new webpack.HotModuleReplacementPlugin()
   ]
 };

@@ -11,9 +11,11 @@
   "author": "baticpro@gmail.com",
   "license": "ISC",
   "dependencies": {
+    "@hot-loader/react-dom": "^16.13.0",
     "express": "^4.17.1",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-hot-loader": "^4.12.20"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",

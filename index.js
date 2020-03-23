@@ -10,7 +10,7 @@ app.use(express.static('public'));
 
 app.use(
   require('webpack-dev-middleware')(compiler, {
-    noInfo: true,
+    //noInfo: true,
     publicPath: webpackConfig.output.publicPath
   })
 );

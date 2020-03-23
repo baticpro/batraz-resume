@@ -4,16 +4,23 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 const htmlPlugin = new HtmlWebPackPlugin({
   template: "./src/index.html",
-  filename: "../index.html"
+  //filename: "../index.html"
 });
 
+const hotReloadPlugin = new webpack.HotModuleReplacementPlugin();
+
 module.exports = {
-  entry: './src/index.js',
+  entry: [
+    'webpack-hot-middleware/client',
+    './src/index.js'
+  ],
+  mode: 'development',
   output: {
     path: path.join(__dirname, 'public/dist'),
     filename: "bundle.js",
     publicPath: "/"
   },
+  devtool: 'inline-source-map',
   module: {
     rules: [
       {
@@ -25,8 +32,13 @@ module.exports = {
       }
     ]
   },
+  resolve: {
+    alias: {
+      'react-dom': '@hot-loader/react-dom',
+    },
+  },
   plugins: [
+    hotReloadPlugin,
     htmlPlugin,
-    new webpack.HotModuleReplacementPlugin()
   ]
 };

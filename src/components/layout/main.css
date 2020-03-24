@@ -3,6 +3,17 @@ body{
     margin: 0;
 }
 
+#root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .main{
-    background-color: red;
+    background-color: white;
+    min-height: 500px;
+    min-width: 500px;
+    margin: 50px;
+    box-shadow: 0 0 2px gray;
+    display: flex;
 }

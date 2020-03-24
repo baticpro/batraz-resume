@@ -1,27 +1,13 @@
 import React from 'react';
-import Avatar from './ui/avatar';
-
-const mail = 'baticpro@gmail.com';
-const telegram = 'baticpro';
-const git = 'baticpro';
+import Avatar from './ui/avatar/avatar';
+import Links from './ui/links/links';
+import Button from "../shared/button";
 
 const ProfileInfo = () => (
-  <div className={'profile-info'}>
+  <div className="profile-info">
     <Avatar />
-
-    <ul className={'profile-items'}>
-      <li>
-        <a href={`mailto:${mail}`}>{mail}</a>
-      </li>
-      <li>
-        <a href={`tg://resolve?domain=${telegram}`}>@{telegram}</a>
-      </li>
-      <li>
-        <a href={`https://github.com/${git}`} target={'_blank'} rel="noopener noreferrer">
-          {git}
-        </a>
-      </li>
-    </ul>
+    <Links />
+    <Button className="rounded-button" onClick={() => {}} title="Download CV" />
   </div>
 );
 

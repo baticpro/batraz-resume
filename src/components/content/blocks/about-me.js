@@ -1,5 +1,6 @@
 import React from 'react';
 import './about-me.css';
+import { FaBeer } from 'react-icons/fa';
 
 const AboutMe = () => (
   <div className="about-me">
@@ -17,7 +18,7 @@ const AboutMe = () => (
       <div className="about-meta">
         <ul>
           <li>
-            <span>Age</span> 32
+            <span>Age</span> 32 <FaBeer />
           </li>
           <li>
             <span>Residence</span> USA

@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import 'animate.css';
-import './booking-slider.css';
+import './blocks-slider.css';
 
 const BlocksSlider = ({ items }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -18,7 +18,7 @@ const BlocksSlider = ({ items }) => {
 
     if (!className) return null;
 
-    return <div className={`slider-item ${className}`}>{component}</div>;
+    return <div className={`slider-item shadowed ${className}`}>{component}</div>;
   };
 
   // TODO for debug

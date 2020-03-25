@@ -1,20 +1,25 @@
 import React from 'react';
-
-const mail = 'baticpro@gmail.com';
-const telegram = 'baticpro';
-const git = 'baticpro';
+import { MdMailOutline } from 'react-icons/md';
+import { FiGithub } from 'react-icons/fi';
+import { FaTelegramPlane } from 'react-icons/fa';
+import './links.css';
+import { MY_GIT, MY_MAIL, MY_TELEGRAM } from '../../../../config';
 
 const Links = () => (
   <ul className="profile-items">
     <li>
-      <a href={`mailto:${mail}`}>{mail}</a>
+      <a href={`mailto:${MY_MAIL}`}>
+        <MdMailOutline color="white" size={45} />
+      </a>
     </li>
     <li>
-      <a href={`tg://resolve?domain=${telegram}`}>{"@"}{telegram}</a>
+      <a href={`https://github.com/${MY_GIT}`} target="_blank" rel="noopener noreferrer">
+        <FiGithub color="white" size={45} />
+      </a>
     </li>
     <li>
-      <a href={`https://github.com/${git}`} target="_blank" rel="noopener noreferrer">
-        {git}
+      <a href={`tg://resolve?domain=${MY_TELEGRAM}`}>
+        <FaTelegramPlane color="white" size={45} />
       </a>
     </li>
   </ul>

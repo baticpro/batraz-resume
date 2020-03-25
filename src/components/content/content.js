@@ -4,7 +4,7 @@ import './content.css';
 import AboutMe from './blocks/about-me';
 
 const Content = () => (
-  <div className="content shadowed">
+  <div className="content">
     <BlocksSlider
       items={[
         { component: <AboutMe />, inClass: 'animated fadeIn', outClass: 'animated fadeOut' },

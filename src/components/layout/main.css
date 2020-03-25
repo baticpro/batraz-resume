@@ -17,7 +17,7 @@ body{
 .main{
     background-color: transparent;
     min-height: 500px;
-    min-width: 700px;
+    min-width: 900px;
     margin: 50px;
     display: flex;
 }
@@ -33,4 +33,20 @@ body{
 
 .flex-50 {
     flex: 50%;
+}
+
+h1, h2, h3, h4, h5{
+    font-weight: 700;
+}
+
+h3>span {
+    color: #1abc9c;
+}
+
+h2{
+    font-size: 25px;
+}
+
+h4{
+    color: #1abc9c;
 }

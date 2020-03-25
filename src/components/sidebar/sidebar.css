@@ -1,5 +1,5 @@
 .sidebar{
-    flex-basis: 30%;
+    flex: 30%;
     background-color: #1abc9c;
     color: white;
 }

@@ -1,3 +1,7 @@
 .about-me{
     padding: 20px;
 }
+
+.about-me h3{
+    font-size: 30px;
+}

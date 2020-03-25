@@ -1,7 +1,8 @@
 import React from 'react';
 import Avatar from './ui/avatar/avatar';
 import Links from './ui/links/links';
-import Button from "../shared/button";
+import Button from '../shared/button';
+import './profile-info.css';
 
 const ProfileInfo = () => (
   <div className="profile-info">

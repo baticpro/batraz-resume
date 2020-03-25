@@ -5,8 +5,8 @@ import './avatar.css';
 const Avatar = () => (
   <div className="avatar-box">
     <img className="avatar" src={avatar} alt="Batraz Dzhioev" />
-    <h2 className="my-name">Batraz Dzhioev</h2>
-    <h3 className="my-position">Frontend Developer</h3>
+    <h1 className="my-name">Batraz Dzhioev</h1>
+    <h2 className="my-position">React & ReactNative Developer</h2>
   </div>
 );
 

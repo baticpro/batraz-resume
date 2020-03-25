@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
 body{
     padding: 0;
     margin: 0;
+    font-weight: 300;
+    background-color: #eae8e7;
+    font-family: 'Roboto', sans-serif;
 }
 
 #root{
@@ -10,10 +15,22 @@ body{
 }
 
 .main{
-    background-color: white;
+    background-color: transparent;
     min-height: 500px;
-    min-width: 500px;
+    min-width: 700px;
     margin: 50px;
-    box-shadow: 0 0 2px gray;
     display: flex;
+}
+
+.shadowed{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.flex-grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-50 {
+    flex: 50%;
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import './about-me.css';
-import { FaBeer } from 'react-icons/fa';
+import { MY_AGE, MY_COUNTRY, MY_MAIL, MY_TOWN } from '../../../config';
+import { GiSpeedometer, GiThreeFriends, GiMiddleArrow, GiFat } from 'react-icons/gi';
 
 const AboutMe = () => (
   <div className="about-me">
@@ -9,60 +10,74 @@ const AboutMe = () => (
     </h3>
 
     <div className="flex-grid">
-      <div className="about-descr">
-        Proin volutpat mauris ac pellentesque pharetra. Suspendisse congue elit vel odio suscipit,
-        sit amet tempor nisl imperdiet. Quisque ex justo, faucibus ut mi in, condimentum finibus
-        dolor. Aliquam vitae hendrerit dolor, eget imperdiet mauris. Maecenas et ante id ipsum
-        condimentum dictum et vel massa. Ut in imperdiet dolor, vel consectetur dui.
+      <div className="about-descr flex-50">
+        <p>
+          Experienced Javascript Developer with a demonstrated history of working in the internet
+          industry. Skilled in PHP, C#, React.js, Unity, and React Native. Strong engineering
+          professional with a Master of Computer Applications - MCA focused in Computer Science from
+          North-Caucasus State Technical University.
+        </p>
       </div>
-      <div className="about-meta">
+      <div className="about-meta flex-50">
         <ul>
           <li>
-            <span>Age</span> 32 <FaBeer />
+            <span>Age:</span> {MY_AGE}
           </li>
           <li>
-            <span>Residence</span> USA
+            <span>Residence:</span> {MY_COUNTRY}
           </li>
           <li>
-            <span>Address</span> 88 Some Street, Some Town
+            <span>Address:</span> {MY_TOWN}
           </li>
           <li>
-            <span>e-mail</span> email@example.com
-          </li>
-          <li>
-            <span>Phone</span> +0123 123 456 789
+            <span>E-mail:</span> {MY_MAIL}
           </li>
         </ul>
       </div>
     </div>
 
+    <p className="my-opinion">
+      “Your work is going to fill a large part of your life, and the only way to be truly satisfied
+      is to do what you believe is great work.”
+      <br />
+      <small>- Steve Jobs</small>
+    </p>
+
+    <h4 className="section-header">
+      I try to <span>Keep</span>
+    </h4>
+
     <div className="about-skills flex-grid">
       <div className="skill-item flex-50">
-        <h4>Ecommerce</h4>
+        <GiFat color="#3498db" size={70} />
+        <h4>Quality</h4>
         <p>
-          Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit
-          amet ultricies ex lectus scelerisque nibh. Ut non sodales.
+          Now I hardly working on this text. Now I hardly working on this text. Now I hardly working
+          on this text.
         </p>
       </div>
       <div className="skill-item flex-50">
-        <h4>Ecommerce</h4>
+        <GiSpeedometer color="#3498db" size={70} />
+        <h4>Speed </h4>
         <p>
-          Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit
-          amet ultricies ex lectus scelerisque nibh. Ut non sodales.
+          Now I hardly working on this text. Now I hardly working on this text. Now I hardly working
+          on this text.
         </p>
       </div>
       <div className="skill-item flex-50">
-        <h4>Ecommerce</h4>
+        <GiMiddleArrow color="#3498db" size={70} />
+        <h4>Accuracy</h4>
         <p>
-          Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit
-          amet ultricies ex lectus scelerisque nibh. Ut non sodales.
+          Now I hardly working on this text. Now I hardly working on this text. Now I hardly working
+          on this text.
         </p>
       </div>
       <div className="skill-item flex-50">
-        <h4>Ecommerce</h4>
+        <GiThreeFriends color="#3498db" size={70} />
+        <h4>Friendly</h4>
         <p>
-          Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit
-          amet ultricies ex lectus scelerisque nibh. Ut non sodales.
+          Now I hardly working on this text. Now I hardly working on this text. Now I hardly working
+          on this text.
         </p>
       </div>
     </div>

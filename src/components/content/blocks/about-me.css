@@ -5,3 +5,30 @@
 .about-me h3{
     font-size: 30px;
 }
+
+.about-meta li{
+    font-size: 18px;
+    padding-bottom: 5px;
+    list-style: none;
+}
+
+.about-meta li span{
+    color: #3498db;
+    font-weight: 400;
+}
+
+.my-opinion{
+    background-color: #3498db;
+    padding: 10px;
+    color: white;
+    font-weight: 400;
+}
+
+.skill-item{
+    margin-top: 10px;
+}
+
+.skill-item h4{
+    margin: 10px 0;
+    font-size: 17px;
+}

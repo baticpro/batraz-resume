@@ -14,7 +14,7 @@ const BlocksSlider = ({ active, items }) => {
 
     if (!className) return null;
 
-    return <div className={`slider-item shadowed ${className}`}>{component}</div>;
+    return <div key={name} className={`slider-item shadowed ${className}`}>{component}</div>;
   };
 
   return (

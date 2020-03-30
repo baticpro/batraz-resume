@@ -1,0 +1,22 @@
+.menu{
+    position: absolute;
+    z-index: 9999;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    top: 10vh;
+    right: 0;
+    background-color: white;
+}
+
+.menu-item{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+}
+
+.menu-item.active{
+    color: #3498db;
+}

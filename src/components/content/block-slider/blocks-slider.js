@@ -1,19 +1,15 @@
-import React, { useState, useRef } from 'react';
+import React from 'react';
 import 'animate.css';
 import './blocks-slider.css';
+import { connect } from 'react-redux';
 
-const BlocksSlider = ({ items }) => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const prevIndex = useRef(null);
-
-  const renderItem = (item, index) => {
-    const { component, inClass, outClass } = item;
+const BlocksSlider = ({ active, items }) => {
+  const renderItem = (item) => {
+    const { component, inClass, name } = item;
     let className = null;
 
-    if (activeIndex === index) {
+    if (active === name) {
       className = inClass + ' delay-05s';
-    } else if (prevIndex === index) {
-      className = outClass;
     }
 
     if (!className) return null;
@@ -21,19 +17,17 @@ const BlocksSlider = ({ items }) => {
     return <div className={`slider-item shadowed ${className}`}>{component}</div>;
   };
 
-  // TODO for debug
-  const next = () => {
-    prevIndex.current = activeIndex;
-    setActiveIndex(activeIndex + 1);
-  };
-
   return (
-    <div className="slider-container" onClick={next}>
-      {items.map((item, index) => {
-        return renderItem(item, index);
+    <div className="slider-container">
+      {items.map((item) => {
+        return renderItem(item);
       })}
     </div>
   );
 };
 
-export default BlocksSlider;
+const mapStateToProps = (state) => ({
+  active: state.menuReducer.active,
+});
+
+export default connect(mapStateToProps)(BlocksSlider);

@@ -7,13 +7,24 @@ const Content = () => (
   <div className="content">
     <BlocksSlider
       items={[
-        { component: <AboutMe />, inClass: 'animated fadeIn', outClass: 'animated fadeOut' },
         {
+          name: 'about-me',
+          component: <AboutMe />,
+          inClass: 'animated fadeIn',
+          outClass: 'animated fadeOut',
+        },
+        {
+          name: 'resume',
           component: <div>test 2</div>,
           inClass: 'animated zoomInUp',
           outClass: 'animated zoomInDown',
         },
-        { component: <div>test 3</div>, inClass: 'animated fadeIn', outClass: 'animated fadeOut' },
+        {
+          name: 'contacts',
+          component: <div>test 3</div>,
+          inClass: 'animated fadeIn',
+          outClass: 'animated fadeOut',
+        },
       ]}
     />
   </div>

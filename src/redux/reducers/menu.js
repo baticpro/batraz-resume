@@ -2,12 +2,10 @@
 
 const SET_ACTIVE_ACTION = 'SET_ACTIVE_ACTION';
 
-export const setActiveAction = (active) => (dispatch) => {
-  dispatch({
-    type: SET_ACTIVE_ACTION,
-    active,
-  });
-};
+export const setActiveAction = (active) => ({
+  type: SET_ACTIVE_ACTION,
+  active,
+});
 
 const initialState = {
   active: 'about-me',

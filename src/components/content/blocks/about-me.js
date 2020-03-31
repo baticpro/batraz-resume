@@ -4,7 +4,7 @@ import { MY_AGE, MY_COUNTRY, MY_MAIL, MY_TOWN } from '../../../config';
 import { GiSpeedometer, GiThreeFriends, GiMiddleArrow, GiFat } from 'react-icons/gi';
 
 const AboutMe = () => (
-  <div className="about-me">
+  <div className="about-me content-container">
     <h3>
       About <span>Me</span>
     </h3>

@@ -1,0 +1,46 @@
+.working-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.working-meta{
+    flex: 35;
+    font-size: 13px;
+    text-align: right;
+    padding-right: 15px;
+    padding-top: 12px;
+}
+
+.working-position{
+    flex: 65;
+    border-left: 1px solid #ddd;
+    padding: 0 10px;
+    position: relative;
+}
+
+.working-position:after{
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    top: 15px;
+    width: 10px;
+    height: 10px;
+    left: -5px;
+    background-color: #3498db;
+    content: '';
+}
+
+.working-position h5{
+    margin: 13px 0;
+}
+
+.working-position p{
+    font-size: 12px;
+}
+
+.working-meta span{
+    color: gray;
+    font-size: 12px;
+}

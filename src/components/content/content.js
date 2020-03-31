@@ -2,6 +2,7 @@ import React from 'react';
 import BlocksSlider from './block-slider/blocks-slider';
 import './content.css';
 import AboutMe from './blocks/about-me';
+import Resume from './blocks/resume';
 
 const Content = () => (
   <div className="content">
@@ -15,7 +16,7 @@ const Content = () => (
         },
         {
           name: 'resume',
-          component: <div>test 2</div>,
+          component: <Resume />,
           inClass: 'animated zoomInUp',
           outClass: 'animated zoomInDown',
         },

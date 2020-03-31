@@ -44,3 +44,19 @@
     color: gray;
     font-size: 12px;
 }
+
+.skill-name{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.skill-percentage{
+    font-size: 12px;
+    font-weight: 400;
+    color: gray;
+    text-align: right;
+}
+
+.skill-bar{
+    margin-bottom: 10px;
+}

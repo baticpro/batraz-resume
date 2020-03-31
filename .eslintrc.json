@@ -4,6 +4,9 @@
     "eslint:recommended",
     "plugin:react/recommended"
   ],
+  "env": {
+    "browser": true
+  },
   "plugins": ["react"],
   "parserOptions": {
     "ecmaVersion": 6,

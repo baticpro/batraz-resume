@@ -48,6 +48,14 @@ body{
     flex: 50%;
 }
 
+.flex-30 {
+    flex: 30%;
+}
+
+.flex-70 {
+    flex: 70%;
+}
+
 h1, h2, h3, h4, h5{
     font-weight: 700;
 }

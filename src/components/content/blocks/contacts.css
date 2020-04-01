@@ -1,0 +1,22 @@
+.contact-box{
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.contact-box h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.contact-wrapper{
+    padding-right: 15px;
+}
+
+.contacts .hint{
+    padding-left: 15px;
+    color: gray;
+    font-size: 15px;
+}

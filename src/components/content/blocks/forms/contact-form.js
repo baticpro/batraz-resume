@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import './contact-form.css';
 
-const ContactForm = ({ onSubmit }) => {
+const ContactForm = ({ onSubmit, loading }) => {
   const [name, setName] = useState(null);
   const [email, setEmail] = useState(null);
   const [text, setText] = useState(null);
@@ -12,20 +13,29 @@ const ContactForm = ({ onSubmit }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="contact-form" onSubmit={handleSubmit}>
       <label>
-        Your name:
-        <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+        <input
+          placeholder="Your name:"
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
       </label>
       <label>
-        Your email:
-        <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
+        <input
+          placeholder="Your email:"
+          type="text"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
       </label>
       <label>
-        Message:
-        <textarea value={text} onChange={(e) => setText(e.target.value)} />
+        <textarea placeholder="Message:" value={text} onChange={(e) => setText(e.target.value)} />
       </label>
-      <input type="submit" value="Отправить" />
+      <button disabled={loading} type="submit">
+        SUBMIT
+      </button>
     </form>
   );
 };

@@ -20,18 +20,25 @@ const ContactForm = ({ onSubmit, loading }) => {
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
+          required
         />
       </label>
       <label>
         <input
           placeholder="Your email:"
-          type="text"
+          type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          required
         />
       </label>
       <label>
-        <textarea placeholder="Message:" value={text} onChange={(e) => setText(e.target.value)} />
+        <textarea
+          placeholder="Message:"
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+          required
+        />
       </label>
       <button disabled={loading} type="submit">
         SUBMIT

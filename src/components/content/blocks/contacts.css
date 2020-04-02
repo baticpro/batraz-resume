@@ -5,6 +5,10 @@
     margin-bottom: 10px;
 }
 
+.contact-box:hover{
+    border: 1px solid #3498db;
+}
+
 .contact-box h4 {
     margin: 0;
     font-size: 14px;

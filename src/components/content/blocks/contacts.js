@@ -1,6 +1,8 @@
 import React from 'react';
 import { MdMailOutline } from 'react-icons/md';
-import { MY_MAIL } from '../../../config';
+import { GoLocation } from 'react-icons/go';
+import { TiSocialSkypeOutline } from 'react-icons/ti';
+import { MY_MAIL, MY_SKYPE, MY_TOWN } from '../../../config';
 import ContactForm from './forms/contact-form';
 import { connect } from 'react-redux';
 import { sendMessageAction } from '../../../redux/reducers/contacts';
@@ -26,12 +28,12 @@ const Contacts = ({ sendMessage, loading }) => {
             <h4>{MY_MAIL}</h4>
           </div>
           <div className="contact-box shadowed">
-            <MdMailOutline color="#3498db" size={35} />
-            <h4>{MY_MAIL}</h4>
+            <GoLocation color="#3498db" size={35} />
+            <h4>{MY_TOWN}</h4>
           </div>
           <div className="contact-box shadowed">
-            <MdMailOutline color="#3498db" size={35} />
-            <h4>{MY_MAIL}</h4>
+            <TiSocialSkypeOutline color="#3498db" size={35} />
+            <h4>{MY_SKYPE}</h4>
           </div>
         </div>
         <div className="flex-70">

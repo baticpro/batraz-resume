@@ -1,6 +1,6 @@
 import React from 'react';
 import 'animate.css';
-import './blocks-slider.css';
+import './blocks-slider.scss';
 import { connect } from 'react-redux';
 
 const BlocksSlider = ({ active, items }) => {
@@ -14,7 +14,11 @@ const BlocksSlider = ({ active, items }) => {
 
     if (!className) return null;
 
-    return <div key={name} className={`slider-item shadowed ${className}`}>{component}</div>;
+    return (
+      <div key={name} className={`slider-item shadowed ${className}`}>
+        {component}
+      </div>
+    );
   };
 
   return (

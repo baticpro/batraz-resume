@@ -2,7 +2,7 @@ import React from 'react';
 import { MdMailOutline } from 'react-icons/md';
 import { FiGithub } from 'react-icons/fi';
 import { FaTelegramPlane } from 'react-icons/fa';
-import './links.css';
+import './links.scss';
 import { MY_GIT, MY_MAIL, MY_TELEGRAM } from '../../../../config';
 
 const Links = () => (

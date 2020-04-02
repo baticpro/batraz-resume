@@ -1,6 +1,6 @@
 import React from 'react';
 import BlocksSlider from './block-slider/blocks-slider';
-import './content.css';
+import './content.scss';
 import AboutMe from './blocks/about-me';
 import Resume from './blocks/resume';
 import Contacts from './blocks/contacts';

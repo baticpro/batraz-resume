@@ -1,18 +1,20 @@
+@import "src/variables";
+
 .contact-box{
     border: 1px solid #ddd;
     text-align: center;
     padding: 10px 0;
     margin-bottom: 10px;
-}
 
-.contact-box:hover{
-    border: 1px solid #3498db;
-}
+    &:hover{
+        border: 1px solid #3498db;
+    }
 
-.contact-box h4 {
-    margin: 0;
-    font-size: 14px;
-    font-weight: 400;
+    h4 {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 400;
+    }
 }
 
 .contact-wrapper{
@@ -21,6 +23,6 @@
 
 .contacts .hint{
     padding-left: 15px;
-    color: gray;
+    color: $gray-color;
     font-size: 15px;
 }

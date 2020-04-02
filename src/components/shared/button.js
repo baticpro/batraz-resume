@@ -1,5 +1,5 @@
 import React from 'react';
-import './button.css';
+import './button.scss';
 
 const Button = ({ onClick, title, className }) => (
   <a onClick={onClick} className={`button ${className}`}>

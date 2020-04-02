@@ -1,0 +1,47 @@
+@import "src/variables";
+
+@mixin input{
+    outline: none;
+    border: none;
+    display: block;
+    margin: 0;
+    width: 100%;
+    font-size: 15px;
+    border-bottom: 1px solid $light-border;
+    padding: 10px 0;
+}
+
+.contact-form{
+    display: block;
+    padding-left: 15px;
+
+    label{
+        display: block;
+        padding: 20px 0;
+        text-align: right;
+    }
+
+    input{
+        @include input;
+
+        &:focus{
+            border-bottom-color: $main-color;
+        }
+    }
+
+    textarea{
+        @include input;
+    }
+
+    button{
+        cursor: pointer;
+        background-color: $main-color;
+        box-shadow: none;
+        border: none;
+        color: $white-color;
+        outline: none;
+        padding: 15px 20px;
+        font-weight: 700;
+        font-size: 17px;
+    }
+}

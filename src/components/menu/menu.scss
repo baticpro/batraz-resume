@@ -1,3 +1,5 @@
+@import "src/variables";
+
 .menu{
     position: absolute;
     z-index: 9999;
@@ -6,7 +8,7 @@
     flex-direction: column;
     top: 10vh;
     right: 0;
-    background-color: white;
+    background-color: $white-color;
 }
 
 .menu-item{
@@ -15,8 +17,8 @@
     justify-content: center;
     cursor: pointer;
     align-items: center;
-}
 
-.menu-item.active{
-    color: #3498db;
+    &.active{
+        color: $main-color;
+    }
 }

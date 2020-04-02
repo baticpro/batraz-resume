@@ -1,0 +1,28 @@
+@import "src/variables";
+
+.about-meta li{
+    font-size: 18px;
+    padding-bottom: 5px;
+    list-style: none;
+
+    span{
+        color: $main-color;
+        font-weight: 400;
+    }
+}
+
+.my-opinion{
+    background-color: $main-color;
+    padding: 10px;
+    color: $white-color;
+    font-weight: 400;
+}
+
+.skill-item{
+    margin-top: 10px;
+
+    h4{
+        margin: 10px 0;
+        font-size: 17px;
+    }
+}

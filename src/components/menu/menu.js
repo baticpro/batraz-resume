@@ -1,6 +1,6 @@
 import React from 'react';
 import { AiOutlineHome, AiOutlineReconciliation, AiOutlineMail } from 'react-icons/ai';
-import './menu.css';
+import './menu.scss';
 import { setActiveAction } from '../../redux/reducers/menu';
 import { connect } from 'react-redux';
 

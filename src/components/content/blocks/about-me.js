@@ -1,5 +1,5 @@
 import React from 'react';
-import './about-me.css';
+import './about-me.scss';
 import { MY_AGE, MY_COUNTRY, MY_MAIL, MY_TOWN } from '../../../config';
 import { GiSpeedometer, GiThreeFriends, GiMiddleArrow, GiFat } from 'react-icons/gi';
 

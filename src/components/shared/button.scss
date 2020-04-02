@@ -1,6 +1,8 @@
+@import "src/variables";
+
 .button{
     cursor: pointer;
-    border: 2px solid white;
+    border: 2px solid $white-color;
     padding: 15px 20px;
     font-weight: 700;
     font-size: 17px;

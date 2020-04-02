@@ -7,7 +7,7 @@ import ContactForm from './forms/contact-form';
 import { connect } from 'react-redux';
 import { sendMessageAction } from '../../../redux/reducers/contacts';
 import Loader from '../../shared/loader';
-import './contacts.css';
+import './contacts.scss';
 
 const Contacts = ({ sendMessage, loading }) => {
   const onSubmit = (message) => {

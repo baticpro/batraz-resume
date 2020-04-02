@@ -1,7 +1,7 @@
 import React from 'react';
 import avatar from '../../../../assets/images/avatar.jpg';
 import { FaReact } from 'react-icons/fa';
-import './avatar.css';
+import './avatar.scss';
 
 const Avatar = () => (
   <div className="avatar-box">

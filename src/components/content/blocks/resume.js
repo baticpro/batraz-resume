@@ -1,5 +1,5 @@
 import React from 'react';
-import './resume.css';
+import './resume.scss';
 import ProgressBar from './ui/progress-bar';
 
 const Resume = () => (

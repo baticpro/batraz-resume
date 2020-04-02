@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './contact-form.css';
+import './contact-form.scss';
 
 const ContactForm = ({ onSubmit, loading }) => {
   const [name, setName] = useState(null);

@@ -2,3 +2,9 @@ $main-color: #34495e; //#3498db;
 $white-color: #fff;
 $light-border: #ddd;
 $gray-color: #808080;
+
+@mixin respond($point) {
+  @if $point == phone {
+    @media (max-width: 600px) { @content }
+  }
+}

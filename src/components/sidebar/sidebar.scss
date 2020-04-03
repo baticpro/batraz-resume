@@ -1,7 +1,11 @@
 @import "src/variables";
 
 .sidebar{
-    flex: 30%;
+    flex: 30;
     background-color: $main-color;
     color: $white-color;
+
+    @include respond(phone) {
+
+    }
 }

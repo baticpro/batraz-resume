@@ -1,6 +1,12 @@
+@import "src/variables";
+
 .content{
     flex-basis: 70%;
     margin-left: 20px;
+
+    @include respond(phone) {
+        margin: 0;
+    }
 }
 
 .content-container{

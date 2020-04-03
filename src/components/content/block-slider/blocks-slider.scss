@@ -8,6 +8,10 @@
     height: 100%;
     overflow-y: scroll;
     background-color: $white-color;
+
+    @include respond(phone) {
+        position: relative;
+    }
 }
 
 .slider-container{

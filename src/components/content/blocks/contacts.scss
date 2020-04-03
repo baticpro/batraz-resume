@@ -23,10 +23,18 @@
 
 .contact-wrapper{
     padding-right: 15px;
+
+    @include respond(phone) {
+        padding-right: 0;
+    }
 }
 
 .contacts .hint{
     padding-left: 15px;
     color: $gray-color;
     font-size: 15px;
+
+    @include respond(phone) {
+        padding-left: 0;
+    }
 }

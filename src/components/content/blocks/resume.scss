@@ -7,6 +7,20 @@
     align-items: flex-start;
 }
 
+.resume{
+    @include respond(phone) {
+        .flex-grid {
+            flex-direction: column;
+        }
+    }
+}
+
+.working-stamp{
+    @include respond(phone) {
+        order: 1;
+    }
+}
+
 .working-meta{
     flex: 35;
     font-size: 13px;

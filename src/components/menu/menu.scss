@@ -9,6 +9,28 @@
     top: 10vh;
     right: 0;
     background-color: $white-color;
+
+    @include respond(phone) {
+        display: none;
+
+        &.open{
+            display: block !important;
+            top: 100px;
+        }
+    }
+}
+
+.mobile-menu{
+    display: none;
+
+    @include respond(phone) {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 25px;
+        font-size: 40px;
+        color: $white-color;
+    }
 }
 
 .menu-item{

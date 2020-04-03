@@ -24,15 +24,15 @@ const Contacts = ({ sendMessage, loading }) => {
       <div className="flex-grid">
         <div className="flex-30 contact-wrapper">
           <div className="contact-box shadowed">
-            <MdMailOutline color="#3498db" size={35} />
+            <MdMailOutline size={35} />
             <h4>{MY_MAIL}</h4>
           </div>
           <div className="contact-box shadowed">
-            <GoLocation color="#3498db" size={35} />
+            <GoLocation size={35} />
             <h4>{MY_TOWN}</h4>
           </div>
           <div className="contact-box shadowed">
-            <TiSocialSkypeOutline color="#3498db" size={35} />
+            <TiSocialSkypeOutline size={35} />
             <h4>{MY_SKYPE}</h4>
           </div>
         </div>

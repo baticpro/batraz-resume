@@ -9,7 +9,7 @@ const BlocksSlider = ({ active, items }) => {
     let className = null;
 
     if (active === name) {
-      className = inClass + ' delay-05s';
+      className = inClass;
     }
 
     if (!className) return null;

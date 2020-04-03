@@ -12,20 +12,20 @@ const Content = () => (
         {
           name: 'about-me',
           component: <AboutMe />,
-          inClass: 'animated fadeIn',
-          outClass: 'animated fadeOut',
+          inClass: 'animated pulse',
+          outClass: 'animated zoomOutLeft',
         },
         {
           name: 'resume',
           component: <Resume />,
-          inClass: 'animated zoomInUp',
+          inClass: 'animated pulse',
           outClass: 'animated zoomInDown',
         },
         {
           name: 'contacts',
           component: <Contacts />,
-          inClass: 'animated fadeIn',
-          outClass: 'animated fadeOut',
+          inClass: 'animated pulse',
+          outClass: 'animated zoomOutLeft',
         },
       ]}
     />

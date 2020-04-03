@@ -22,7 +22,7 @@ const Menu = ({ active, setActive }) => {
   };
 
   return (
-    <div className="menu shadowed">
+    <div className="menu shadowed animated slideInRight delay-3s">
       {menuItems.map(({ name, icon }) => {
         return (
           <a key={name} onClick={onMenu(name)} className={setClassName(name)}>

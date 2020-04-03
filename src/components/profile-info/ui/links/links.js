@@ -9,17 +9,17 @@ const Links = () => (
   <ul className="profile-items">
     <li>
       <a href={`mailto:${MY_MAIL}`}>
-        <MdMailOutline color="white" size={45} />
+        <MdMailOutline size={35} />
       </a>
     </li>
     <li>
       <a href={`https://github.com/${MY_GIT}`} target="_blank" rel="noopener noreferrer">
-        <FiGithub color="white" size={45} />
+        <FiGithub size={35} />
       </a>
     </li>
     <li>
       <a href={`tg://resolve?domain=${MY_TELEGRAM}`}>
-        <FaTelegramPlane color="white" size={45} />
+        <FaTelegramPlane size={35} />
       </a>
     </li>
   </ul>

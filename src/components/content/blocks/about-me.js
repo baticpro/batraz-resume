@@ -49,7 +49,7 @@ const AboutMe = () => (
 
     <div className="about-skills flex-grid">
       <div className="skill-item flex-50">
-        <GiFat color="#3498db" size={70} />
+        <GiFat size={70} />
         <h4>Quality</h4>
         <p>
           Now I hardly working on this text. Now I hardly working on this text. Now I hardly working
@@ -57,7 +57,7 @@ const AboutMe = () => (
         </p>
       </div>
       <div className="skill-item flex-50">
-        <GiSpeedometer color="#3498db" size={70} />
+        <GiSpeedometer size={70} />
         <h4>Speed </h4>
         <p>
           Now I hardly working on this text. Now I hardly working on this text. Now I hardly working
@@ -65,7 +65,7 @@ const AboutMe = () => (
         </p>
       </div>
       <div className="skill-item flex-50">
-        <GiMiddleArrow color="#3498db" size={70} />
+        <GiMiddleArrow size={70} />
         <h4>Accuracy</h4>
         <p>
           Now I hardly working on this text. Now I hardly working on this text. Now I hardly working
@@ -73,7 +73,7 @@ const AboutMe = () => (
         </p>
       </div>
       <div className="skill-item flex-50">
-        <GiThreeFriends color="#3498db" size={70} />
+        <GiThreeFriends size={70} />
         <h4>Friendly</h4>
         <p>
           Now I hardly working on this text. Now I hardly working on this text. Now I hardly working

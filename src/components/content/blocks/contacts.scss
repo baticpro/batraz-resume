@@ -1,13 +1,17 @@
 @import "src/variables";
 
 .contact-box{
-    border: 1px solid #ddd;
+    border: 1px solid $light-border;
     text-align: center;
     padding: 10px 0;
     margin-bottom: 10px;
 
     &:hover{
-        border: 1px solid #3498db;
+        border: 1px solid $main-color;
+
+        svg{
+            color: $main-color;
+        }
     }
 
     h4 {

@@ -1,5 +1,7 @@
 // ducks pattern
 
+import { AWS_LAMBDA_URL } from '../../config';
+
 const MESSAGE_LOADING_ACTION = 'MESSAGE_LOADING_ACTION';
 const MESSAGE_FAIL_ACTION = 'MESSAGE_FAIL_ACTION';
 
@@ -11,10 +13,18 @@ export const setLoadingAction = (loading) => ({
 export const sendMessageAction = (message) => (dispatch) => {
   dispatch(setLoadingAction(true));
 
-  setTimeout(() => {
-    console.log(message);
-    dispatch(setLoadingAction(false));
-  }, 2000);
+  fetch(AWS_LAMBDA_URL, {
+    method: 'POST',
+    mode: 'no-cors',
+    body: JSON.stringify(message),
+  })
+    .then((data) => {
+      console.log(data);
+      dispatch(setLoadingAction(false));
+    })
+    .catch((e) => {
+      console.log(e);
+    });
 };
 
 export const setErrorAction = (error) => ({

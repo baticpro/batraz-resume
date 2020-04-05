@@ -67,6 +67,10 @@ export const MY_SKILLS = [
     value: 95,
   },
   {
+    name: 'HTML & CSS',
+    value: 93,
+  },
+  {
     name: 'Redux',
     value: 90,
   },
@@ -96,10 +100,10 @@ export const MY_SKILLS = [
   },
   {
     name: 'Android',
-    value: 40,
+    value: 35,
   },
   {
     name: 'Java',
-    value: 35,
+    value: 25,
   },
 ];

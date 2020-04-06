@@ -7,11 +7,11 @@ import ProfileInfo from './components/profile-info/profile-info';
 import Menu from './components/menu/menu';
 import { Provider } from 'react-redux';
 import { store } from './redux/store';
-import { loadReCaptcha } from 'react-recaptcha-google';
+import { loadRecaptcha } from './utils/re-captcha';
 
 const App = () => {
   useEffect(() => {
-    loadReCaptcha();
+    loadRecaptcha();
   }, []);
 
   return (

@@ -2,6 +2,8 @@ $main-color: #34495e; //#3498db;
 $white-color: #fff;
 $light-border: #ddd;
 $gray-color: #808080;
+$success-color: #608e4b;
+$error-color: #862e1c;
 
 @mixin respond($point) {
   @if $point == phone {

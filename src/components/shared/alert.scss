@@ -1,0 +1,27 @@
+@import "src/variables";
+
+.alert{
+  color: white;
+  padding: 15px 10px;
+  position: relative;
+  margin-left: 15px;
+
+  @include respond(phone) {
+    margin-left: 0;
+  }
+
+  .close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+  }
+
+  &.alert-danger{
+    background-color: $error-color;
+  }
+
+  &.alert-success{
+    background-color: $success-color;
+  }
+}

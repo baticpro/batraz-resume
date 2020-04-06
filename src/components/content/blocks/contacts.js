@@ -8,6 +8,7 @@ import { connect } from 'react-redux';
 import { sendMessageAction } from '../../../redux/reducers/contacts';
 import Loader from '../../shared/loader';
 import './contacts.scss';
+import Alert from '../../shared/alert';
 
 const Contacts = ({ sendMessage, loading }) => {
   const onSubmit = (message) => {
@@ -20,7 +21,6 @@ const Contacts = ({ sendMessage, loading }) => {
         Get in <span>Touch</span>
       </h3>
 
-      <Loader size="small" loading={loading} />
       <div className="flex-grid">
         <div className="flex-30 contact-wrapper">
           <div className="contact-box shadowed">
@@ -38,6 +38,8 @@ const Contacts = ({ sendMessage, loading }) => {
         </div>
         <div className="flex-70">
           <p className="hint">You can write me message right here and I'll get it on my email.</p>
+          <Alert />
+          <Loader size="small" loading={loading} />
           <ContactForm loading={loading} onSubmit={onSubmit} />
         </div>
       </div>

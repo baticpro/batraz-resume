@@ -103,3 +103,6 @@ export const MY_SKILLS = [
     value: 35,
   },
 ];
+
+export const SUCCESS_MESSAGE = 'Your message was successfully sent';
+export const FAIL_MESSAGE = 'Something went wrong, please try again';

@@ -1,12 +1,12 @@
 require('@babel/register', {
-  presets: ["@babel/preset-env", "@babel/preset-react"]
+  presets: ['@babel/preset-env', '@babel/preset-react'],
 });
 require('babel-polyfill');
-require["extensions"]['.scss'] = () => {};
-require["extensions"]['.css'] = () => {};
+require['extensions']['.scss'] = () => {};
+require['extensions']['.css'] = () => {};
 
 const images = [];
-require["extensions"]['.jpg'] = (module, filename) => {
+require['extensions']['.jpg'] = (module, filename) => {
   const path = filename.split('/assets')[1];
   images.push(path);
 };
@@ -21,4 +21,4 @@ let template = require('./index');
 template = template.default.replace(/\[object Object]/, images);
 
 const fs = require('fs');
-fs.writeFileSync('./public/dist/index.html', template.trim());
+fs.writeFileSync(__dirname + '/../public/dist/index.html', template.trim());

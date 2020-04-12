@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "build": "webpack --config webpack.prod.js",
+    "ssr": "node ssr/run.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "baticpro@gmail.com",
@@ -26,9 +27,11 @@
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-react": "^7.9.1",
+    "@babel/register": "^7.9.0",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "babel-polyfill": "^6.26.0",
+    "babel-register": "^6.26.0",
     "css-loader": "^3.4.2",
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.19.0",

@@ -15,10 +15,10 @@ window = {};
 
 const webpack = require('webpack');
 const ssrConfig = require('./webpack.ssr');
-webpack(ssrConfig).run();
+webpack(ssrConfig).run(() => {
+  let template = require('./index');
+  template = template.default.replace(/\[object Object]/, images);
 
-let template = require('./index');
-template = template.default.replace(/\[object Object]/, images);
-
-const fs = require('fs');
-fs.writeFileSync(__dirname + '/../public/dist/index.html', template.trim());
+  const fs = require('fs');
+  fs.writeFileSync(__dirname + '/../public/dist/index.html', template.trim());
+});

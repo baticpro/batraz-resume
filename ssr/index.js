@@ -6,6 +6,6 @@ import App from '../src/App';
 const html = ReactDOMServer.renderToString(
   <App />
 );
-const template = templateFn(html);
-console.log(template);
+
+export default templateFn(html);
 

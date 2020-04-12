@@ -1,15 +1,12 @@
 const path = require('path');
-const HtmlWebPackPlugin = require('html-webpack-plugin');
-
-const htmlPlugin = new HtmlWebPackPlugin({
-  template: './src/index.html',
-});
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  //entry: ['babel-polyfill', './src/index.js'],
+  plugins: [new MiniCssExtractPlugin()],
+  entry: ['babel-polyfill', './src/index.js'],
   output: {
-    path: path.join(__dirname, 'public/dist'),
-    filename: 'bundle.js',
+    path: path.join(__dirname, '../public/dist'),
+    filename: 'client.js',
     publicPath: '/',
   },
   module: {
@@ -23,17 +20,21 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
         test: /\.s[ac]ss$/i,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
             loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'images/',
+            },
           },
         ],
       },
@@ -51,5 +52,4 @@ module.exports = {
       },
     ],
   },
-  plugins: [htmlPlugin],
 };

@@ -5,7 +5,7 @@ const common = require('./webpack.common.js');
 const hotReloadPlugin = new webpack.HotModuleReplacementPlugin();
 
 module.exports = merge(common, {
-  entry: ['webpack-hot-middleware/client', 'babel-polyfill', './src/run.js'],
+  entry: ['webpack-hot-middleware/client', 'babel-polyfill', './src/index.js'],
   mode: 'development',
   devtool: 'inline-source-map',
   resolve: {

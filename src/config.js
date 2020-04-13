@@ -1,5 +1,6 @@
 export const MY_MAIL = 'baticpro@gmail.com';
 export const MY_TELEGRAM = 'baticpro';
+export const MY_LINKEDIN = 'https://www.linkedin.com/in/baticpro';
 export const MY_GIT = 'baticpro';
 export const MY_SKYPE = 'baticpro';
 export const MY_AGE = new Date().getFullYear() - 1993;
@@ -75,12 +76,16 @@ export const MY_SKILLS = [
     value: 90,
   },
   {
+    name: 'Webpack',
+    value: 87,
+  },
+  {
     name: 'C#',
     value: 75,
   },
   {
     name: 'NodeJS',
-    value: 65,
+    value: 55,
   },
   {
     name: 'PHP',
@@ -88,23 +93,23 @@ export const MY_SKILLS = [
   },
   {
     name: 'SQL',
-    value: 45,
-  },
-  {
-    name: 'iOS',
-    value: 55,
-  },
-  {
-    name: 'Swift',
-    value: 48,
-  },
-  {
-    name: 'Android',
     value: 35,
   },
   {
-    name: 'Java',
+    name: 'iOS',
+    value: 28,
+  },
+  {
+    name: 'Swift',
     value: 25,
+  },
+  {
+    name: 'Android',
+    value: 25,
+  },
+  {
+    name: 'Java',
+    value: 15,
   },
 ];
 

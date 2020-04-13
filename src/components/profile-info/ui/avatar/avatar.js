@@ -10,7 +10,7 @@ const Avatar = () => (
     <div className="animated rotateIn delay-5s">
       <FaReact size={50} />
     </div>
-    <h2 className="my-position"> React & ReactNative Developer</h2>
+    <h2 className="my-position">React & ReactNative Developer</h2>
   </div>
 );
 

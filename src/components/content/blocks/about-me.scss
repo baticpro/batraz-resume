@@ -29,4 +29,8 @@
     svg{
         color: $main-color;
     }
+
+    @include respond(phone) {
+        padding: 10px;
+    }
 }

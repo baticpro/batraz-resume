@@ -21,4 +21,5 @@ webpack(ssrConfig).run(() => {
 
   const fs = require('fs');
   fs.writeFileSync(__dirname + '/../public/dist/index.html', template.trim());
+  fs.copyFileSync(__dirname + '/../public/favicon.ico', __dirname + '/../public/dist/favicon.ico');
 });

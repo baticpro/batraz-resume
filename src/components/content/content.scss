@@ -3,6 +3,7 @@
 .content{
     flex-basis: 70%;
     margin-left: 20px;
+    border-radius: 5px;
 
     @include respond(phone) {
         margin: 0;

@@ -13,10 +13,10 @@ const AboutMe = () => (
     <div className="flex-grid">
       <div className="about-descr flex-50">
         <p>
-          Experienced Javascript Developer with a demonstrated history of working in the internet
-          industry. Skilled in React.js and ReactNative. Strong engineering professional with a
-          Master of Computer Applications - MCA focused in Computer Science from North-Caucasus
-          State Technical University.
+          Hi! My name is Batraz. I'm frontend developer. My main technologies are React for web and
+          ReactNative for mobile apps. I like resolving interesting projects and difficult tasks. My
+          lovely hobby is making mobile games on Unity3D engine. Also I've some backend background
+          on the nodeJS and PHP.
         </p>
       </div>
       <div className="about-meta flex-50">
@@ -45,7 +45,7 @@ const AboutMe = () => (
     </p>
 
     <h4 className="section-header">
-      I try to <span>Keep</span>
+      I maintain high <span>Level</span> of
     </h4>
 
     <div className="about-skills flex-grid">
@@ -62,11 +62,11 @@ const AboutMe = () => (
       <div className="skill-item flex-50">
         <GiMiddleArrow size={70} />
         <h4>Accuracy</h4>
-        <p>I making my job with all compounds of technical documents</p>
+        <p>I making my job with all compliance of technical documents</p>
       </div>
       <div className="skill-item flex-50">
         <GiThreeFriends size={70} />
-        <h4>Friendly</h4>
+        <h4>Friendship</h4>
         <p>If you need my help, I always open for suggestions and supporting</p>
       </div>
     </div>

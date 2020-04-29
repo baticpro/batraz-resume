@@ -27,6 +27,7 @@
 
     @include respond(phone) {
         padding-right: 0;
+        flex: 100%;
     }
 }
 

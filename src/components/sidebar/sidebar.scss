@@ -5,7 +5,7 @@
     background-color: $main-color;
     color: $white-color;
 
-    @include respond(phone) {
-
+    @include respond(desktop) {
+        border-radius: 5px;
     }
 }

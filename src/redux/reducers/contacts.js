@@ -54,7 +54,6 @@ const initialState = {
 };
 
 export const contactsReducer = (state = initialState, { type, ...rest }) => {
-  // IMHO switch case getting faq
   if (type) return { ...initialState, ...rest };
   return state;
 };

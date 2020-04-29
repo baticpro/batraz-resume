@@ -10,8 +10,8 @@ const Resume = () => (
     </h3>
 
     <p className="resume-description">
-      On this section You can find out information about my experience and skills. I like
-      technologies and always try extend my knowledge in different platforms.
+      On this section You can find out information of my experience and skills. I love technologies
+      and always try to extend my knowledge in different platforms.
     </p>
 
     <div className="flex-grid">

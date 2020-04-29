@@ -9,4 +9,8 @@ $error-color: #862e1c;
   @if $point == phone {
     @media (max-width: 600px) { @content }
   }
+
+  @if $point == desktop {
+    @media (min-width: 600px) { @content }
+  }
 }

@@ -43,9 +43,15 @@
         box-shadow: none;
         border: none;
         color: $white-color;
+        border-radius: 5px;
         outline: none;
         padding: 15px 20px;
         font-weight: 700;
         font-size: 17px;
+        transition: all 0.1s ease-in;
+
+        &:hover{
+           opacity: 0.9;
+        }
     }
 }

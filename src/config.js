@@ -13,16 +13,23 @@ export const AWS_LAMBDA_URL =
 
 export const MY_EXPERIENCE = [
   {
-    date: 'march 2020 - current',
+    date: 'october 2020 - current',
+    company: 'Utair',
+    position: 'React Native Developer',
+    description: 'Mobile app for Utair company',
+  },
+  {
+    date: 'february 2020 - september 2020',
     company: 'Noveo Group',
     position: 'React Native Developer',
-    description: 'Only start working ',
+    description:
+      'I worked on the different mobile applications: HR platform tools, entertainment apps and other.',
   },
   {
     date: 'june 2019 - february 2020',
     company: 'RailsMuffin',
     position: 'React Native Developer',
-    description: 'Worked on interesting HealthCare mobile application at position of RN developer',
+    description: 'Worked on interesting HealthCare mobile application at position of RN developer.',
   },
   {
     date: 'may 2018 - june 2019',
